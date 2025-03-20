@@ -1,0 +1,26 @@
+package javaapplication133;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication133 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        // Declarar variáveis
+          double produto, precoFinal;  
+        // Entrada de dados
+        System.out.println("Insira o preço do produto: ");
+        produto = ler.nextDouble();
+        // Processamento e Saida de dados
+        if (produto >= 100){
+            precoFinal = produto -(produto * 0.15);
+            System.out.println("O valor com desconto de 15% em reais ficou: " + precoFinal);
+        }else {
+            precoFinal = produto - (produto* 0.05);
+            System.out.println("O valor com desconto de 5% em reais ficou:" + precoFinal);
+        }
+    }
+
+}
