@@ -1,0 +1,28 @@
+package javaapplication133;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication133 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        // Declarar variáveis
+        double ladoA, ladoB, ladoC;
+        // Entrada de dados
+        System.out.println("Insira os lados do seu triangulo:");
+        ladoA = ler.nextDouble();
+        ladoB = ler.nextDouble();
+        ladoC = ler.nextDouble();
+        // Processamento e Saida de dados
+       if(ladoA == ladoB && ladoA == ladoC){
+           System.out.println("Seu tringulo é equilátero.");
+       }else if(ladoA == ladoB || ladoB == ladoC ||ladoA == ladoC){
+           System.out.println("Seu tringulo é isóceles.");
+       }else{
+           System.out.println("Seu triangulo é escaleno");
+       }
+
+    }
+}
