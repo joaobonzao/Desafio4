@@ -1,0 +1,31 @@
+package javaapplication133;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication133 {
+
+    public static void main(String[] args) {
+        //Declarar variáveis
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        double baseMaior, baseMenor, altura, area;
+        //Entrada de dados
+        System.out.println("Insira o tamanho da base maior(maior que 0): ");
+        baseMaior = ler.nextDouble();
+        System.out.println("Insira o tamanho da base menor(maior que 0): ");
+        baseMenor = ler.nextDouble();
+        System.out.println("Insira o tamanho da altura:");
+        altura = ler.nextDouble();
+        //Processamento
+        area = (baseMaior + baseMenor) * altura / 2;
+        //Saida de dados 
+        if (baseMenor > 0 || baseMaior > 0) {
+            System.out.println("A área o trapézio é: " + decimal.format(area));
+        } else {
+            System.out.println("Suas bases são invalidas");
+        }
+
+    }
+
+}
