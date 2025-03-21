@@ -1,0 +1,31 @@
+package javaapplication133;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication133 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        // Declarar variáveis
+        int nota;
+        // Entrada de dados
+        System.out.println("Insira uma nota de 0 a 100;");
+        nota = ler.nextInt();
+        // Processamento e Saida de dados
+       if (nota >= 0 && nota <= 49){
+           System.out.println("Nota insuficiente.");
+       }else if (nota >= 50 && nota <= 69){
+           System.out.println("Nota regular.");
+       }else if (nota >= 70 && nota <= 89){
+           System.out.println("Nota boa.");
+       }else if (nota >= 90 && nota <= 100){
+           System.out.println("Nota excelente!");
+       }else{
+           System.out.println("Nota invalida.");
+       }
+       
+
+    }
+}
