@@ -1,0 +1,26 @@
+package javaapplication133;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication133 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        // Declarar variáveis
+        int hora;
+        // Entrada de dados
+        System.out.println("Insira a Hora( Não utilize minutos): ");
+        hora = ler.nextInt();
+        // Processamento e Saida de dados
+        if (hora >= 6 && hora <= 12) {
+            System.out.println("Bom dia!");
+        } else if (hora > 12 && hora <= 18) {
+            System.out.println("Bom tarde!");
+        } else {
+            System.out.println("Boa noite!");
+        }
+
+    }
+}
