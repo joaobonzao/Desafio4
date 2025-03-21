@@ -1,0 +1,71 @@
+package javaapplication133;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication133 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        // Declarar variáveis
+        int mesAno;
+        // Entrada de dados
+        System.out.println("Insira o mês do ano (de 1 a 12):");
+        mesAno = ler.nextInt();
+        // Processamento e Saida de dados
+        switch (mesAno) {
+            case 1:
+                System.out.println("Janeiro");
+                System.out.println("Estação: Verão");
+                break;
+            case 2:
+                System.out.println("Fevereiro");
+                System.out.println("Estação: Verão");
+                break;
+            case 3:
+                System.out.println("Março");
+                System.out.println("Estação: Outono");
+                break;
+            case 4:
+                System.out.println("Abril");
+                System.out.println("Estação: Outono");
+                break;
+            case 5:
+                System.out.println("Maio");
+                System.out.println("Estação: Outono");
+                break;
+            case 6:
+                System.out.println("Junho");
+                System.out.println("Estação: Inverno");
+                break;
+            case 7:
+                System.out.println("Julho");
+                System.out.println("Estação: Inverno");
+                break;
+            case 8:
+                System.out.println("Agosto");
+                System.out.println("Estação: Inverno");
+                break;
+            case 9:
+                System.out.println("Setembro");
+                System.out.println("Estação: Primaveira");
+                break;
+            case 10:
+                System.out.println("Outubro");
+                System.out.println("Estação: Primaveira");
+                break;
+            case 11:
+                System.out.println("Novembro");
+                System.out.println("Estação: Primaveira");
+                break;
+            case 12:
+                System.out.println("Dezembro");
+                System.out.println("Estação: Verão");
+                break;
+            default:
+                System.out.println("Invalído");
+        }
+
+    }
+}
